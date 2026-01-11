@@ -21,17 +21,17 @@ export default function ApplyPage() {
         <Container>
           <h1 className="h1">Apply to Generative AI @ Cornell</h1>
           <p className="mt-4 text-base md:text-lg leading-relaxed text-zinc-300 max-w-2xl">
-            <div className="apply-strikeout"> Build a superstar project.
-            Show that you can use AI.
-            Join us.</div>
-            We are currently not in the recruitment season. Check back in around the time of SP 26' instruction start.
+            <span className="apply-strikeout"> Build a superstar project.
+              Show that you can use AI.
+              Join us.</span><br />
+            We are currently not in the recruitment season. Check back in around the time of SP 26&apos; instruction start.
           </p>
 
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div>
               <Timeline items={items} />
             </div>
-            
+
             <div className="space-y-8">
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeGj9KCqA4_iu4gMfV97mGATUtohsvN2yY3JbgpjH45ZTsX8A/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-2xl bg-red-600 px-6 py-4 text-white font-semibold shadow-lg shadow-red-500/30 hover:bg-red-500 hover:shadow-lg hover:shadow-red-500/40 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-400">
@@ -46,10 +46,10 @@ export default function ApplyPage() {
                 {[{
                   q: "What do you look for in a new member?",
                   a: "The most important trait is drive and ambition. We want to know that you can get things done no matter the challenge. Second most important is the depth of your technical experience. Thirdly, we want people that we can vibe (and vibecode) with.",
-                },{
-                  q: "What do I submit?", 
+                }, {
+                  q: "What do I submit?",
                   a: "We want to see your skills put to the test in building and shipping a real AI application. You have 3 weeks either solo or with 1-2 teammates. We'll evaluate based on technical sophistication, innovation, and implementation quality. Any idea goes, so choose something cool that excites you.",
-                },  {
+                }, {
                   q: "What will the work environment look like?",
                   a: "You'll be part of a small, agile team working quickly on specific client projects. We focus on delivering real solutions for companies that have hired us to solve their problems.",
                 }].map((f) => (
